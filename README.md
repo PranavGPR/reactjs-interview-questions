@@ -2085,7 +2085,7 @@ You can download the PDF and Epub version of this repository from the latest run
     this.setState({ count: this.state.count + 1 })
     this.setState({ count: this.state.count + 1 })
     this.setState({ count: this.state.count + 1 })
-    // this.state.count === 1, not 3
+    // this.state.count === 0, not 3
     ```
 
     If we pass a function to `setState()`, the count gets incremented correctly.
@@ -5176,7 +5176,7 @@ You can download the PDF and Epub version of this repository from the latest run
      ```javascript
      static getDerivedStateFromError(error)
      ```
-     Let us take error boundary use case with the above lifecycle method for demonistration purpose,
+     Let us take error boundary use case with the above lifecycle method for demonstration purpose,
      ```javascript
      class ErrorBoundary extends React.Component {
        constructor(props) {
